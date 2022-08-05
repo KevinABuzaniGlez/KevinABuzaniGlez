@@ -2,7 +2,7 @@ import pybullet as pb
 import numpy as np
 import time
 import transforms3d as tf
-import plotly.graph_objects as go
+
 
 
 np.set_printoptions(precision=3, suppress=True)  # neat printing
@@ -84,45 +84,4 @@ while True:
     pb.resetBasePositionAndOrientation(Ring3,[0,0,0], PosR3)
 
     time.sleep(1./240.)
-
-
-
-
-
-
-
-    # if x==0:
-    #     PosR1=tf.euler.euler2quat(0,np.pi/2,0, 'rzyx')
-    #     p.resetBasePositionAndOrientation(Ring1,[0,0,0], PosR1) 
-    #     time.sleep(3)
-    #     x=x+1
-    
-    # if x==1:
-    #     PosR1=tf.euler.euler2quat(0,np.pi,0, 'rzyx')
-    #     p.resetBasePositionAndOrientation(Ring1,[0,0,0], PosR1) 
-    #     time.sleep(3)
-    #     x=x+1
-    
-    # if x==2:
-    #     PosR1=tf.euler.euler2quat(np.pi/2,np.pi,0, 'rzyx')
-    #     p.resetBasePositionAndOrientation(Ring1,[0,0,0], PosR1) 
-    #     time.sleep(3)
-    #     x=0
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
 
